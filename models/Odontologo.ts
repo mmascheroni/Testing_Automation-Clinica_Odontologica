@@ -15,6 +15,10 @@ export class Odontologo {
     }
 
     // Getters
+    public getId() {
+        return this.id;
+    }
+
     public getNombre() {
         return this.nombre;
     }
