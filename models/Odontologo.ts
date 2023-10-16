@@ -1,6 +1,6 @@
 export class Odontologo {
 
-    private id : bigint;
+    private id : number;
 
     private nombre : string;
 

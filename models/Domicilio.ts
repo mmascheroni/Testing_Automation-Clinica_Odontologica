@@ -1,5 +1,5 @@
 export class Domicilio {
-    private id : bigint;
+    private id : number;
 
     private calle : string;
 

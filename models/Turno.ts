@@ -1,15 +1,15 @@
 import { Paciente } from './Paciente';
 import { Odontologo } from './Odontologo';
 export class Turno {
-    private id : bigint;
+    private id : number;
 
     private paciente : Paciente;
 
     private odontologo : Odontologo;
 
-    private fechaYHora: Date;
+    private fechaYHora: string;
 
-    public constructor( paciente : Paciente, odontologo : Odontologo, fechaYHora : Date ) {
+    public constructor( paciente : Paciente, odontologo : Odontologo, fechaYHora : string ) {
         this.paciente = paciente;
         this.odontologo = odontologo;
         this.fechaYHora = fechaYHora;
@@ -42,7 +42,7 @@ export class Turno {
         this.odontologo = odontologo;
     }
 
-    public setFechaYHora( fechaYHora : Date ) {
+    public setFechaYHora( fechaYHora : string ) {
         this.fechaYHora = fechaYHora;
     }
 }

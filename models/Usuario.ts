@@ -2,7 +2,7 @@ import { Role } from "./Role"
 
 export class Usuario {
 
-    private id:bigint;
+    private id:number;
 
     private nombre:string;
 

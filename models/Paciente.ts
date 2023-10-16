@@ -3,7 +3,7 @@ import { Domicilio } from './Domicilio';
 
 export class Paciente {
 
-    private id : bigint;
+    private id : number;
 
     private nombre : string;
 
@@ -11,11 +11,11 @@ export class Paciente {
 
     private dni : string;
 
-    private fechaIngreso : Date;
+    private fechaIngreso : string;
 
     private domicilio : Domicilio;
 
-    public constructor( nombre : string, apellido : string, dni : string, fechaIngreso : Date, domicilio : Domicilio ) {
+    public constructor( nombre : string, apellido : string, dni : string, fechaIngreso : string, domicilio : Domicilio ) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.dni = dni;
@@ -61,7 +61,7 @@ export class Paciente {
         this.dni = dni;
     }
 
-    public setFechaIngreso( fechaIngreso : Date ) {
+    public setFechaIngreso( fechaIngreso : string ) {
         this.fechaIngreso = fechaIngreso;
     }
 
